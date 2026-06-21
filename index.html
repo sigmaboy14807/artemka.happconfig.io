@@ -4,127 +4,203 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Artemka FINAL Stable</title>
-
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 body{
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    background:#0f172a;
-    font-family:Arial,sans-serif;
+font-family:Inter,Arial,sans-serif;
+background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+color:#fff;
+line-height:1.6;
 }
-
+.container{max-width:1100px;margin:auto;padding:20px}
+.hero{
+text-align:center;
+padding:80px 20px;
+}
+.hero h1{
+font-size:3.2rem;
+margin-bottom:10px;
+}
+.hero p{
+color:#cbd5e1;
+max-width:700px;
+margin:auto;
+}
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:18px 36px;
+border-radius:18px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+font-size:1.2rem;
+font-weight:700;
+transition:.2s;
+}
+.btn:hover{transform:scale(1.05)}
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin:40px 0;
+}
 .card{
-    width:90%;
-    max-width:600px;
-    text-align:center;
-    background:#1e293b;
-    border-radius:24px;
-    padding:40px 25px;
-    box-shadow:0 0 40px rgba(0,0,0,.4);
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.08);
+border-radius:22px;
+padding:24px;
 }
-
-h1{
-    color:#fff;
-    font-size:2.5rem;
-    margin-bottom:10px;
+.card h3{margin-bottom:10px}
+.section-title{
+font-size:2rem;
+margin:50px 0 20px;
+text-align:center;
 }
-
-.subtitle{
-    color:#94a3b8;
-    margin-bottom:35px;
-    font-size:1.1rem;
+.faq details{
+background:rgba(255,255,255,.05);
+margin-bottom:12px;
+padding:18px;
+border-radius:14px;
 }
-
-button{
-    width:100%;
-    border:none;
-    border-radius:20px;
-    padding:28px;
-    font-size:1.8rem;
-    font-weight:bold;
-    cursor:pointer;
-    color:white;
-    background:#2563eb;
-    transition:.2s;
+.faq summary{
+cursor:pointer;
+font-weight:700;
 }
-
-button:hover{
-    transform:scale(1.03);
+.footer{
+text-align:center;
+padding:50px 20px;
+color:#94a3b8;
 }
-
-button:active{
-    transform:scale(.98);
-}
-
-.status{
-    margin-top:25px;
-    color:#e2e8f0;
-    min-height:24px;
-}
-
-.info{
-    margin-top:20px;
-    color:#64748b;
-    font-size:.95rem;
+.badge{
+display:inline-block;
+padding:8px 16px;
+border-radius:999px;
+background:#1d4ed8;
+margin-bottom:20px;
 }
 </style>
 </head>
 <body>
 
+<div class="container">
+
+<section class="hero">
+<div class="badge">Artemka FINAL Stable</div>
+<h1>Универсальный конфиг для HAPP</h1>
+<p>
+Стабильный конфиг для игр, соцсетей, стриминга и повседневного использования.
+Оптимизирован под РФ, Android, iPhone и Windows.
+</p>
+
+<a class="btn" href="#">➕ Добавить в HAPP</a>
+</section>
+
+<h2 class="section-title">Преимущества</h2>
+
+<div class="grid">
 <div class="card">
+<h3>🎮 Игры</h3>
+<p>Оптимизирован для Roblox, Steam, Riot Games, Faceit и Escape From Tarkov.</p>
+</div>
 
-    <h1>Artemka FINAL Stable</h1>
+<div class="card">
+<h3>⚡ Производительность</h3>
+<p>Российские ресурсы направляются напрямую для минимальной задержки.</p>
+</div>
 
-    <div class="subtitle">
-        Нажмите кнопку ниже для добавления конфига в HAPP
-    </div>
+<div class="card">
+<h3>🛡️ Защита</h3>
+<p>Блокировка рекламы и нежелательной телеметрии Windows.</p>
+</div>
 
-    <button onclick="installHapp()">
-        ➕ Добавить в HAPP
-    </button>
+<div class="card">
+<h3>📱 Универсальность</h3>
+<p>Подходит для Android, iPhone и Windows без отдельных версий.</p>
+</div>
+</div>
 
-    <div class="status" id="status"></div>
+<h2 class="section-title">Что исправляет конфиг</h2>
 
-    <div class="info">
-        Android и iPhone поддерживаются
-    </div>
+<div class="grid">
+<div class="card">
+<h3>❌ Долгая загрузка сайтов</h3>
+<p>Маршрутизация снижает количество лишних обходов трафика.</p>
+</div>
+
+<div class="card">
+<h3>❌ Проблемы с сервисами</h3>
+<p>Зарубежные сервисы работают через прокси автоматически.</p>
+</div>
+
+<div class="card">
+<h3>❌ Реклама</h3>
+<p>Используются списки блокировки рекламных доменов.</p>
+</div>
+
+<div class="card">
+<h3>❌ Сложная настройка</h3>
+<p>Установка производится одной кнопкой.</p>
+</div>
+</div>
+
+<h2 class="section-title">ЧАВО</h2>
+
+<div class="faq">
+
+<details>
+<summary>Конфиг ускоряет интернет?</summary>
+<p>Нет. Конфиг не увеличивает скорость тарифа. Он лишь правильно маршрутизирует трафик.</p>
+</details>
+
+<details>
+<summary>Подходит для Roblox?</summary>
+<p>Да. Конфиг рассчитан на стабильную работу игровых сервисов.</p>
+</details>
+
+<details>
+<summary>Будет работать на iPhone?</summary>
+<p>Да. Поддерживаются Android и iPhone.</p>
+</details>
+
+<details>
+<summary>Нужно ли что-то настраивать вручную?</summary>
+<p>В большинстве случаев достаточно импортировать конфиг в HAPP.</p>
+</details>
 
 </div>
 
-<script>
+<h2 class="section-title">Мифы и ответы разработчика</h2>
 
-const happLink =
-`happ://routing/onadd/eyJOYW1lIjoiQXJ0ZW1rYSBGSU5BTCBTdGFibGUiLCJHbG9iYWxQcm94eSI6InRydWUiLCJSb3V0ZU9yZGVyIjoiYmxvY2stcHJveHktZGlyZWN0IiwiUmVtb3RlRE5TVHlwZSI6IkRvSCIsIlJlbW90ZUROU0RvbWFpbiI6Imh0dHBzOi8vOC44LjguOC9kbnMtcXVlcnkiLCJSZW1vdGVETlNJUCI6IjguOC44LjgiLCJEb21lc3RpY0ROU1R5cGUiOiJEb0giLCJEb21lc3RpY0ROU0RvbWFpbiI6Imh0dHBzOi8vNzcuODguOC44L2Rucy1xdWVyeSIsIkRvbWVzdGljRE5TSVAiOiI3Ny44OC44LjgiLCJHZW9pcHVybCI6Imh0dHBzOi8vZ2l0aHViLmNvbS9Mb3lhbHNvbGRpZXIvdjJyYXktcnVsZXMtZGF0L3JlbGVhc2VzL2xhdGVzdC9kb3dubG9hZC9nZW9pcC5kYXQiLCJHZW9zaXRldXJsIjoiaHR0cHM6Ly9naXRodWIuY29tL0xveWFsc29sZGllci92MnJheS1ydWxlcy1kYXQvcmVsZWFzZXMvbGF0ZXN0L2Rvd25sb2FkL2dlb3NpdGUuZGF0IiwiTGFzdFVwZGF0ZWQiOiIxNzgxMjk2NDA4IiwiRG5zSG9zdHMiOnsibGtmbDIubmFsb2cucnUiOiIyMTMuMjQuNjQuMTc1IiwibGtucGQubmFsb2cucnUiOiIyMTMuMjQuNjQuMTgxIn0sIkRpcmVjdFNpdGVzIjpbImRvbWFpbjp0aWt0b2suY29tIiwiZG9tYWluOnRpa3Rva3YuY29tIiwiZG9tYWluOmJ5dGVvdmVyc2VhLmNvbSIsImRvbWFpbjppYnl0ZWltZy5jb20iLCJkb21haW46bXVzY2RuLmNvbSIsImdlb3NpdGU6UFJJVkFURSIsImdlb3NpdGU6Q0FURUdPUlktUlUiLCJnZW9zaXRlOkFQUExFIiwiZ2Vvc2l0ZTpNSUNST1NPRlQiLCJnZW9zaXRlOlNURUFNIiwiZ2Vvc2l0ZTpSSU9UIiwiZ2Vvc2l0ZTpFU0NBUEVGUk9NVEFSS09WIiwiZ2Vvc2l0ZTpGQUNFSVQiLCJnZW9zaXRlOlBJTlRFUkVTVCIsImdlb3NpdGU6VFdJVENIIiwiZ2Vvc2l0ZTpFUElDQlJPV1NFUiIsImdlb3NpdGU6RVBJQ0dBTUVTIl0sIkRpcmVjdElwIjpbImdlb2lwOlBSSVZBVEUiLCJnZW9pcDpSVSJdLCJQcm94eVNpdGVzIjpbImdlb3NpdGU6Uk9CTE9YIl0sIlByb3h5SXAiOltdLCJCbG9ja1NpdGVzIjpbImdlb3NpdGU6Q0FURUdPUlktQURTLUFMTCIsImdlb3NpdGU6V0lOLVNQWSJdLCJCbG9ja0lwIjpbXSwiRG9tYWluU3RyYXRlZ3kiOiJJUElmTm9uTWF0Y2giLCJGYWtlRE5TIjoiZmFsc2UiLCJVc2VDaHVua0ZpbGVzIjoidHJ1ZSJ9`;
+<div class="grid">
 
-async function installHapp(){
+<div class="card">
+<h3>💬 «Глобальный прокси всегда хуже»</h3>
+<p><b>Ответ:</b> Не всегда. При грамотных Direct-правилах можно сохранить удобство и стабильность одновременно.</p>
+</div>
 
-    const status = document.getElementById("status");
+<div class="card">
+<h3>💬 «Чем больше правил — тем лучше»</h3>
+<p><b>Ответ:</b> Избыточные правила часто только усложняют поддержку конфига.</p>
+</div>
 
-    status.textContent = "📋 Копируем ссылку...";
+<div class="card">
+<h3>💬 «Этот конфиг ускорит пинг в два раза»</h3>
+<p><b>Ответ:</b> Нет. Конфиг не способен физически уменьшить расстояние до сервера.</p>
+</div>
 
-    try{
-        await navigator.clipboard.writeText(happLink);
-        status.textContent =
-        "✅ Ссылка скопирована. Открываем HAPP...";
-    }catch(e){
-        status.textContent =
-        "⚠️ Не удалось скопировать. Пробуем открыть HAPP...";
-    }
+<div class="card">
+<h3>💬 «Если работает — нужно постоянно улучшать»</h3>
+<p><b>Ответ:</b> Стабильность важнее бесконечных экспериментов.</p>
+</div>
 
-    setTimeout(() => {
-        window.location.href = happLink;
-    }, 500);
-}
+</div>
 
-</script>
+<div class="footer">
+Artemka FINAL Stable • GitHub Pages Edition
+</div>
 
+</div>
 </body>
 </html>
